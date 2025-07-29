@@ -1,0 +1,16 @@
+var cidades = ["São Paulo", "Rio de Janeiro", "Belo Horizonte", "Curitiba", "Porto Alegre"];
+console.log("A terceira cidade é:", cidades[2]);
+var numeros = [10, 20, 30, 40, 50];
+numeros.splice(3, 0, 35);
+numeros.splice(1, 1);
+console.log("Array final:", numeros);
+var nums1 = [1, 2, 3, 4, 5];
+var multiplicados = nums1.map(function (num) { return num * 3; });
+console.log("Array original:", nums1);
+console.log("Array multiplicado:", multiplicados);
+var nums2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var impares = nums2.filter(function (num) { return num % 2 !== 0; });
+console.log("Array de números impares:", impares);
+var nums3 = [5, 7, 10, 12, 15];
+var somaTotal = nums3.reduce(function (acumulador, atual) { return acumulador + atual; }, 0);
+console.log("Soma total dos números:", somaTotal);

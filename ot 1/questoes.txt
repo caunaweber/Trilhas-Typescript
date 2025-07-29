@@ -1,0 +1,43 @@
+1. O que é TypeScript e quais são suas principais vantagens em relação ao JavaScript?
+TypeScript é um superset (superconjunto) do JavaScript que adiciona tipagem estática e recursos avançados de desenvolvimento.
+
+Vantagens:
+
+Tipagem Estática: Permite detectar erros de tipo em tempo de desenvolvimento, antes da execução do código.
+
+Melhor suporte a IDEs: Ferramentas como o VS Code oferecem autocompletar, navegação entre arquivos, e refatoração inteligente, graças aos tipos.
+
+
+2. Analise o seguinte código em TypeScript e explique a diferença em relação ao JavaScript:
+
+Em JavaScript, esse código funcionaria (com coerção de tipos) e retornaria 20, pois a string "5" seria convertida automaticamente para número.
+
+Em TypeScript, o compilador acusa erro em tempo de compilação:
+Argument of type 'string' is not assignable to parameter of type 'number'.
+
+3. Quais os passos para instalar o TypeScript e configurar um novo projeto?
+
+npm install -g typescript
+tsc --init
+tsc index.ts
+
+
+4. O que é o arquivo tsconfig.json e qual sua importância?
+O tsconfig.json é o arquivo de configuração do compilador TypeScript. Ele define como o TypeScript deve compilar o código do projeto.
+
+Importância:
+
+Permite padronizar configurações do projeto.
+
+Evita necessidade de passar parâmetros toda vez que rodar o tsc.
+
+Duas configurações importantes:
+
+"target": Define para qual versão do JavaScript o código será convertido (ex: "ES6").
+
+"outDir": Define o diretório onde os arquivos JavaScript compilados serão salvos.
+
+5. Depois de criar um arquivo TypeScript (index.ts), quais comandos usar para compilar e rodar o código?
+
+tsc index.ts
+node index.js
